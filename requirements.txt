@@ -1,0 +1,5 @@
+ipython==8.24.0
+Flask==3.0.2
+python-dotenv==1.0.1
+google-cloud-firestore==2.16.1
+firebase-admin==6.5.0
