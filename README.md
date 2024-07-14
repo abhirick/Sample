@@ -44,4 +44,31 @@ This is a Flask-based Python application designed to manage user details. It pro
    ```sh
      export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/serviceAccountKey.json"
 
-## Installation
+## Configuration
+   Update the configuration settings in the config.py file as required.
+   
+
+## Running the Application
+   To run the Flask application locally:
+
+      
+
+## Running Tests
+To run unit tests for the application:
+   
+
+
+## Docker Setup
+
+
+
+## Deploying to Cloud Run using Cloud Build
+
+
+## API Endpoints
+
+
+## Configuration
+
+
+## Configuration
