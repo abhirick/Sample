@@ -13,7 +13,6 @@ This is a Flask-based Python application designed to manage user details. It pro
 - [Docker Setup](#docker-setup)
 - [Deploying to Cloud Run using Cloud Build](#deploying-to-cloud-run-using-cloud-build)
 - [API Endpoints](#api-endpoints)
-- [Sample Images](#sample-images)
 
 ## Features
 - **Status Check:** Endpoint to check if the application is running.
@@ -109,20 +108,20 @@ images:
    ```
 ## API Endpoints
    1. Status Check
-      ## Curl Request: curl --location 'http://localhost:5000/user/status'
-      URL: /user/status
-      Method: GET
-      Response:
+      - ** Curl Request: curl --location 'http://localhost:5000/user/status'
+      - ** URL: /user/status
+      - ** Method: GET
+      - ** Response:
       ```sh
       {
         "message": "App is running"
       }
       ```
    3. Retrieve User Details:
-      ## Curl Request: curl --location 'http://localhost:5000/user/1720955324766'
-      URL: /user/<string:id>
-      Method: GET
-      Response:
+      - ** Curl Request: curl --location 'http://localhost:5000/user/1720955324766'
+      - ** URL: /user/<string:id>
+      - ** Method: GET
+      - ** Response:
       ```sh
       {
         "id": "1",
@@ -139,7 +138,7 @@ images:
       }
      
    4. Store User Details
-      ## Curl Request: curl --location 'http://localhost:5000/user' \
+      - ** Curl Request: curl --location 'http://localhost:5000/user' \
                      --header 'Content-Type: application/json' \
                      --data-raw '{
                          "id": 10,
@@ -154,9 +153,9 @@ images:
                              "zip": "HX1 0AB"
                          }
                      }'
-      URL: /user
-      Method: POST
-      Request Body:
+      - ** URL: /user
+      - ** Method: POST
+      - ** Request Body:
       ```sh
       {
         "id": "1",
@@ -172,9 +171,9 @@ images:
         }
       }
       ```
-      Response:
+      - ** Response:
       ```sh
       {
-        "id": "1"
+        "id": "1720959029188"
       }
       ```
