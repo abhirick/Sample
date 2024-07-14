@@ -98,21 +98,3 @@ def retrieve_document_from_collection(user_id):
         logger.error(f"Error retrieving document: {e}")
         return None
 
-
-# Update a document
-def update_user(user_id, name=None, age=None):
-    doc_ref = db.collection(COLLECTION_NAME).document(user_id)
-    updates = {}
-    if name:
-        updates["name"] = name
-    if age:
-        updates["age"] = age
-    if updates:
-        doc_ref.update(updates)
-        print(f"User {user_id} updated.")
-
-
-# Delete a document
-def delete_user(user_id):
-    db.collection("users").document(user_id).delete()
-    print(f"User {user_id} deleted.")
