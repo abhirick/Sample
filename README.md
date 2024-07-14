@@ -109,6 +109,7 @@ images:
    ```
 ## API Endpoints
    1. Status Check
+      Curl Request: curl --location 'http://localhost:5000/user/status'
       URL: /user/status
       Method: GET
       Response:
@@ -117,7 +118,8 @@ images:
         "message": "App is running"
       }
       ```
-   2. Retrieve User Details
+   3. Retrieve User Details:
+      Curl Request: curl --location 'http://localhost:5000/user/1720955324766'
       URL: /user/<string:id>
       Method: GET
       Response:
@@ -135,8 +137,23 @@ images:
           "zip": "HX1 0AB"
         }
       }
-    ```
-   3. Store User Details
+     
+   4. Store User Details
+      Curl Request: curl --location 'http://localhost:5000/user' \
+                     --header 'Content-Type: application/json' \
+                     --data-raw '{
+                         "id": 10,
+                         "first_name": "Abhishek",
+                         "last_name": "Mallick",
+                         "age": 36,
+                         "email": "john.doe@example.com",
+                         "address": {
+                             "street": "123 Main St",
+                             "city": "Halifax",
+                             "state": "Yorkshire",
+                             "zip": "HX1 0AB"
+                         }
+                     }'
       URL: /user
       Method: POST
       Request Body:
