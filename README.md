@@ -1,5 +1,7 @@
 # User Details Application
 
+![Beautiful Image](path/to/your/image.png)
+
 ## Overview
 This is a Flask-based Python application designed to manage user details. It provides endpoints to check application status, retrieve user details, and store user details in Firestore.
 
